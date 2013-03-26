@@ -1,4 +1,4 @@
-### Book Discovery App
+# Book Discovery App
 
 To get:
 
@@ -15,14 +15,14 @@ You are now all setup.
 
 TODOS:
 
-# Thien-Bach Huynh
+## Thien-Bach Huynh
 - [ ] a task list item
 - [ ] list syntax required
 - [ ] normal **formatting**, @mentions, #1234 refs
 - [ ] incomplete
 - [x] completed
 
-#Weston Vogel
+## Weston Vogel
 - [ ] a task list item
 - [ ] list syntax required
 - [ ] normal **formatting**, @mentions, #1234 refs
