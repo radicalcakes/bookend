@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}Discover Something New to Read{% endblock %}
+
+{% block masthead %}
+<!-- <div class="jumbotron">
+	<h1>Discover and Share Books</h1>
+</div> -->
+<div id="myCarousel" class="carousel">
+	<div class="carousel-inner">
+		<div class="item active">
+			<img src="{{STATIC_URL}}images/books.jpg">
+			<div class="container">
+				<div class="row jee">
+					<div class="carousel-caption">
+						<h2 class="span5">Discover your next<br>favorite book.</h2>
+					</div>
+					<h3 class="sign-up-leg span5 pull-right">Create an account, it's <span class="free">free!</span></h3>
+					<div class="row">
+						{% load crispy_forms_tags %}
+						{% crispy register_form %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
