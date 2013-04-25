@@ -1,5 +1,32 @@
 # Book Discovery App
 
+#To instructor:
+
+Project requirements:
+- python pip
+- mysqldb-python
+- python flask
+- flask wtforms
+- peewee orm
+- flask-peewee
+
+Why did we use python and why these requirements/dependencies?
+We wanted to focus on newer technologies, while still retaining core information
+we gained from class.  PHP is quickly becoming an outdated technology (Google, youtube, twitter have switched to python...Facebook is switching to python and C).  We wanted to capitalize the opportunity that this project presented to practice and sharpen our skillsets.  I would like to thank Mrs. Xiomara Casado for keeping an open mind and allowing us to pursue this opportunity.  
+
+
+Instructions for running:
+
+Once the requirements above are installed, set your mysql settings in config.py to your local mysql settings.
+
+Execute the simple http server by running the following command:  python main.py
+
+Visit [domain.com] or [localhost] : 1933 to enjoy.
+
+
+
+You can ignore everything below this line (this is instructions for git, our version control system used in this project).
+
 To get:
 
 ```

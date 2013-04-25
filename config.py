@@ -2,9 +2,9 @@
 
 class Configuration(object):
 	DATABASE = {
-	    'name': 'radicalcakes',
-	    'user': 'radicalcakes',
-	    'passwd': 'takeonmetakemeonlytakemeout',
+	    'name': 'tbhuynh',
+	    'user': 'tbhuynh',
+	    'host': '131.247.30.6',
 	    'engine': 'peewee.MySQLDatabase',
 	}
 	DEBUG = True
