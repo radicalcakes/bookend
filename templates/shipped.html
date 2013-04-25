@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}Welcome, user!{% endblock %}
+{% block logged_in %}
+	<div class="btn-group">
+	  <button class="btn dropdown-toggle" data-toggle="dropdown">
+	    {{user.username}}
+	    <span class="caret"></span>
+	  </button>
+	  <ul class="dropdown-menu">
+	    <li><a href="/address_create">Edit Address</a></li>
+	  </ul>
+	</div>
+	<a href="/logout" class="pull-right">Sign Out</a>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+	<h3>Thank you for sharing your book and enriching the literary community. Your recipient's information will be emailed to you!</h3>
+	<a href="/dashboard" class="btn btn-info">Return to my Dashboard</a>
+</div>
+{% endblock %}
+

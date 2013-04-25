@@ -1,2 +1,5 @@
-venv/
-settings.py
+*.sublime*
+Thumbs.db
+.DS_Store
+*.pyc
+.vimrc

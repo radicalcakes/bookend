@@ -1,0 +1,27 @@
+{% extends "dashboard.html" %}
+{% block book_list %}
+<div class="container">
+<h2>My Books</h2>
+
+  <table class="table">
+  	<thead>
+  		<tr><th>Title</th><th>Author</th><th>Ship?</th></tr>
+  	</thead>
+  	<tbody>
+	    {% for book in book_list %}
+	    	<tr>
+	      		<td>{{book.title}}</td> 
+	      		<td>{{book.author}}</td>
+				<td>
+					<form method="post" action="/shipped">
+						<input type="hidden" name="book_id" value="{{book.id}}">
+						<input class="btn btn-info" type="submit" value="Yes!">
+					</form>
+				</td>
+			</tr>
+	    {% endfor %}
+	</tbody>
+  </table>
+</div>
+
+{% endblock %}

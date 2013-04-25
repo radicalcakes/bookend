@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}Welcome, user!{% endblock %}
+{% block logged_in %}
+	<div class="btn-group">
+	  <button class="btn dropdown-toggle" data-toggle="dropdown">
+	    {{user.username}}
+	    <span class="caret"></span>
+	  </button>
+	  <ul class="dropdown-menu">
+	    <li><a href="/address_create">Edit Address</a></li>
+	  </ul>
+	</div>
+	<a href="/logout" class="pull-right">Sign Out</a>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+<h3>Add your books</h3>
+<h4>{{msg}}</h4>
+	<form action="" method="post" class="form-horizontal">
+						<div class="control-group">
+							<div class="controls">
+							{{book_form.title(placeholder="title", class="span5")}}
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+							{{book_form.author(placeholder="author", class="span5")}}
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								{{book_form.isbn(placeholder="isbn", class="span5")}}
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+						<input type="submit" class="btn-large btn-success span2" ="Add">
+							</div>
+						</div>
+					</form>
+					<a href="/dashboard" class="btn">Cancel</a>
+</div>
+{% endblock %}
+
+

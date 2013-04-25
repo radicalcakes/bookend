@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}Welcome, user!{% endblock %}
+{% block logged_in %}
+	<div class="btn-group">
+	  <button class="btn dropdown-toggle" data-toggle="dropdown">
+	    {{user.username}}
+	    <span class="caret"></span>
+	  </button>
+	  <ul class="dropdown-menu">
+	    <li><a href="/address_create">Edit Address</a></li>
+	  </ul>
+	</div>
+	<a href="/logout" class="pull-right">Sign Out</a>
+{% endblock %}
+
+{% block body %}
+<h3>Create your address</h3>
+	<form action="" method="post" class="form-horizontal">
+						<div class="control-group">
+							<div class="controls">
+							{{address_form.street(placeholder="street", class="span5")}}
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+							{{address_form.zipcode(placeholder="zipcode", class="span5")}}
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								{{address_form.state(placeholder="state", class="span5")}}
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+							{{address_form.country(placeholder="country", class="span5")}}
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+						<input type="submit" class="btn-large btn-success span2" ="Save">
+							</div>
+						</div>
+					</form>
+					<a href="/dashboard" class="btn">Cancel</a>
+{% endblock %}
+
+
